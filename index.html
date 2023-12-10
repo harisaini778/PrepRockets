@@ -30,7 +30,7 @@
         }
 
         @media(max-width:576px){
-           body {
+           .body {
             overflow-x: hidden !important;
            }
 
@@ -40,23 +40,23 @@
             padding: 10px;
             text-align: center;
             position: absolute;
-            left: 50%;
-            top : 35%;
+            left: 50% !important;
+            top : 20% !important;
             transform: translateX(-50%);
         }
 
         .carousel-caption h2 {
-            font-size: 1rem;
-            margin-bottom: 10px;
+            font-size: 1rem !important;
+            margin-bottom: 10px !important;
         }
 
         .carousel-caption h3 {
-            font-size: 1rem;
-            margin-bottom: 10px;
+            font-size: 1rem !important;
+            margin-bottom: 10px !important;
         }
 
         .carousel-caption button {
-            font-size: 0.5rem;
+            font-size: 1rem !important;
         }
         }
 
@@ -92,7 +92,7 @@
             padding: 40px 0;
         }
 
-        .footer-grids {
+        /* .footer-grids {
             display: flex;
             justify-content: space-between;
         }
@@ -112,7 +112,7 @@
             text-align: justify;
             font-size: 14px;
             line-height: 1.6;
-        }
+        } */
 
         .footer-grid a.btn {
             background-color: #007bff;
@@ -445,7 +445,7 @@
                 </ul>
                 <br />
                 <a href="https://drive.google.com/uc?export=download&id=0B31Bwc7Ou3YIVDRnemgxang1Ukk"
-                    class="btn btn-primary" role="button">Download Brochure</a>
+                    class="btn btn-primary" role="button" style="margin-bottom: 2rem;">Download Brochure</a>
             </div>
             <div class="col-md-6 container-fluid">
                 <img src="https://source.unsplash.com/600x450/?assessments" class="d-block w-100" alt="PrepRockets Lucknow">
@@ -672,23 +672,26 @@
     <div class="container">
         <div class="footer-grids">
             <div class="col-lg-4  col-sm-12 footer-grid">
-                <h4>About Us</h4>
-                <p><span>PrepRockets is the first smart class provider institute in Lucknow. Our
+                <h4 class="text-center">About Us</h4>
+                <p class="text-center"><span>PrepRockets is the first smart class provider institute in Lucknow. Our
                         well-qualified teachers make us different. At our institute, you can find the
                         appropriate conglomeration of enthusiasm and experience which sets us aside from the rest
                         of the institutes.</span></p>
             </div>
             <div class="col-lg-4 col-sm-12 footer-grid">
-                <h4>Upcoming Batches</h4>
-                <p>New batches will be announced soon. Kindly download our brochure and keep visiting our website
+                <h4 class="text-center">Upcoming Batches</h4>
+                <p class="text-center">New batches will be announced soon. Kindly download our brochure and keep visiting our website
                     for further details. </p><br />
-                <a href="https://drive.google.com/uc?export=download&id=0B31Bwc7Ou3YIVDRnemgxang1Ukk"
-                    class="btn btn-primary download">Download Brochure</a>
+                    <div class="d-flex justify-content-center">
+                        <a href="https://drive.google.com/uc?export=download&id=0B31Bwc7Ou3YIVDRnemgxang1Ukk" class="btn btn-primary download"
+                            style="margin-bottom: 2rem;">Download Brochure</a>
+                    </div>
+               
                 <div class="clearfix"> </div>
             </div>
             <div class="col-lg-4 col-sm-12 footer-grid">
-                <h4>Contact Us</h4>
-                <ul>
+                <h4 class="text-center">Contact Us</h4>
+                <ul class="text-center" style="list-style:none;">
                     <li><i class="glyphicon glyphicon-map-marker" aria-hidden="true"></i>S.P. Complex(Near SBI),
                         Murpa More, Lucknow, Latehar - 829202</li>
                     <li><i class="glyphicon glyphicon-earphone" aria-hidden="true"></i>+91-9219253496</li>
