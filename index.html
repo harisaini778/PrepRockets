@@ -22,13 +22,30 @@
         }
     </style>
     <!-- Top Navbar for Contact Details -->
-    <nav class="navbar contact-navbar">
+    <nav class="navbar contact-navbar" id="contactNavbar">
         <div class="container text-center">
             <span class="contact-info text-center">Phone: (123) 456-7890 | Email: preprockets@gmail.com</span>
             <span class="contact-info text-center">Registration: <a href="#admission">Apply Now</a></span>
             <span class="contact-info text-center">Timing: Mon to Sun, 4 PM - 9 PM</span>
         </div>
     </nav>
+
+    <script>
+        // JavaScript to conditionally hide the navbar for screens < 576px
+        window.addEventListener('resize', function () {
+            var contactNavbar = document.querySelector('.contact-navbar');
+            if (window.innerWidth < 576) {
+                contactNavbar.style.display = 'none';
+            } else {
+                contactNavbar.style.display = 'block';
+            }
+        });
+
+        // Initial check on page load
+        if (window.innerWidth < 576) {
+            document.querySelector('.contact-navbar').style.display = 'none';
+        }
+    </script>
 
     <!-- Navigation Bar -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
@@ -89,7 +106,7 @@
     </nav>
 
     <!-- Image Carousel (Slideshow) -->
-    <div id="carouselExample" class="carousel slide" data-ride="carousel">
+    <div id="carouselExample mt-5" class="carousel slide" data-ride="carousel">
         <ol class="carousel-indicators">
             <li data-target="#carouselExample" data-slide-to="0" class="active"></li>
             <li data-target="#carouselExample" data-slide-to="1"></li>
@@ -407,8 +424,8 @@
     <!-- End Latest CBSE News -->
     
     <!-- Admission Enquiry for PrepRockets -->
-    <div class="text-center bg-primary text-white pt-3 m-4" style="display: flex;justify-content: center;border-radius: 15px;">
-        <p>For any <strong>admission</strong> enquiries, you can call us at <strong>+91-9939882130, +91-7808454171.</strong>
+    <div class="text-center bg-primary text-white container" style="border-radius: 15px;">
+        <p class="p-2">For any <strong>admission</strong> enquiries, you can call us at <strong>+91-9939882130, +91-7808454171.</strong>
             You can mail us at  <strong>preprockets@gmail.com </strong></p>
     </div>
     <!-- End Admission Enquiry for PrepRockets -->
@@ -444,41 +461,71 @@
     <!-- End Why Should Join PrepRockets -->
     
     <!-- PrepRockets Admission -->
-    <div class="container-fluid m-4">
-        <div style="display: flex;justify-content: center;">
-    <h2 class="text-center text-primary" style="border-bottom:4px solid #007BFF;">Want to Join Us?</h2>
+
+
+<div class="container-fluid m-4">
+    <div class="text-center" style="display: flex;justify-content: center;">
+        <h2 class="text-primary" style="border-bottom:4px solid #007BFF; width: fit-content;">Want to Join Us?</h2>
+    </div>
+
+    <div class="row m-4">
+        <div class="col-md-4 mb-4">
+            <div class="card h-100 border-primary">
+                <div class="card-body">
+                    <h4 class="card-title">Procedure</h4>
+                    <p class="card-text">Students seeking admission to any of our batches are required to undergo our
+                        admission test, which is based upon the NCERT syllabus of the respective class.</p>
+                </div>
+                <div class="card-footer text-center">
+                    <a href="https://drive.google.com/open?id=0B31Bwc7Ou3YIVDRnemgxang1Ukk" target="_blank"
+                        class="btn btn-primary">Get Brochure</a>
+                </div>
+            </div>
         </div>
-       
-        <div class="row m-4">
-            <div class="col-md-3">
-                <h4>Procedure</h4>
-                <p>Students seeking admission to any of our batches are required to undergo our admission test, which is
-                    based upon the NCERT syllabus of the respective class.</p>
-                <center><a href="https://drive.google.com/open?id=0B31Bwc7Ou3YIVDRnemgxang1Ukk" target="_blank"
-                        class="btn btn-primary">Get Brochure</a></center>
+
+        <div class="col-md-4 mb-4">
+            <div class="card h-100 border-primary">
+                <div class="card-body">
+                    <h4 class="card-title">Registration</h4>
+                    <p class="card-text">The interested students can get registered online or offline and take the
+                        admission test online. For the offline exam, kindly contact at our office.</p>
+                </div>
+                <div class="card-footer text-center">
+                    <a href="./admission.html" class="btn btn-primary">Register Now</a>
+                </div>
             </div>
-            <div class="col-md-3">
-                <h4>Registration</h4>
-                <p>The interested students can get registered online or offline and take the admission test online. For the
-                    offline exam, kindly contact at our office.</p>
-                <center><a href="./admission.html" class="btn btn-primary">Register Now</a></center>
+        </div>
+
+        <div class="col-md-4 mb-4">
+            <div class="card h-100 border-primary">
+                <div class="card-body">
+                    <h4 class="card-title">Admission Test</h4>
+                    <p class="card-text">The students who qualify for our admission can be enrolled in any of our
+                        courses. The minimum marks to pass the admission test are 70%. It is the mandatory criteria.</p>
+                </div>
+                <div class="card-footer text-center">
+                    <a href="https://www.classmarker.com/online-test/start/?quiz=6ym589db54ae3a3b"
+                        title="PrepRockets Online Admission Test" target="_blank" class="btn btn-primary">Take Test
+                        Now</a>
+                </div>
             </div>
-            <div class="col-md-3">
-                <h4>Admission Test</h4>
-                <p>The students who qualify for our admission can be enrolled in any of our courses. The minimum marks to
-                    pass the admission test are 70%. It is the mandatory criteria.</p>
-                <center><a href="https://www.classmarker.com/online-test/start/?quiz=6ym589db54ae3a3b"
-                        title="PrepRockets Online Admission Test" target="_blank" class="btn btn-primary">Take Test Now</a>
-                </center>
-            </div>
-            <div class="col-md-3">
-                <h4>Any Enquiry</h4>
-                <p>For any admission enquiries, you can contact us at +91-7808454171. You can also mail your queries to
-                    singhtutorialLucknow@gmail.com. We love to hear from you!</p>
-                <center><a href="./contact.html" class="btn btn-primary">Contact Now</a></center>
+        </div>
+
+        <div class="col-md-4 mb-4">
+            <div class="card h-100 border-primary">
+                <div class="card-body">
+                    <h4 class="card-title">Any Enquiry</h4>
+                    <p class="card-text">For any admission enquiries, you can contact us at +91-7808454171. You can also
+                        mail your queries to singhtutorialLucknow@gmail.com. We love to hear from you!</p>
+                </div>
+                <div class="card-footer text-center">
+                    <a href="./contact.html" class="btn btn-primary">Contact Now</a>
+                </div>
             </div>
         </div>
     </div>
+</div>
+
     <!-- End PrepRockets Admission -->
     
     <!-- About PrepRockets -->
