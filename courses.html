@@ -20,8 +20,8 @@
     <!-- Favicon -->
     <link rel="shortcut icon" href="./favicon.png" type="image/png" />
 
-    <!-- CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <!-- Bootstrap CDN CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
 
     <!-- Google Fonts -->
@@ -167,343 +167,509 @@
             margin: 0 10px;
         }
 </style>
-<style>
-    body {
-        font-family: 'Montserrat', sans-serif;
-    }
-
-    /* Banner Section Styles */
-    .banner-w3agile {
-        background: #007bff;
-        /* Bootstrap Primary Color */
-        padding: 15px 0;
-    }
-
-    .banner-w3agile h3 a {
-        color: #fff;
-        font-size: 18px;
-    }
-
-    /* Course Grid Styles */
-    .course-grids {
-        margin-top: 30px;
-    }
-
-    .course-grid {
-        overflow: hidden;
-        margin-bottom: 20px;
-    }
-
-    .course-grid img {
-        width: 100%;
-        height: auto;
-        border: 4px solid #fff;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    }
-
-    .course-grid1,
-    .course-grid1 h4,
-    .grid-part {
-        padding: 15px;
-
-    }
-
-    .course-grid1 h4 {
-        color: #007bff;
-        /* Bootstrap Primary Color */
-        border-bottom: 2px solid #007bff;
-        /* Bootstrap Primary Color */
-        text-align: center;
-        font-weight: bold;
-        font-size: 24px;
-        margin-top: 0;
-    }
-
-    .grid-part li {
-        list-style-type: none;
-        padding: 8px 0;
-        color: #777;
-    }
-
-    /* Course Enquiry Section Styles */
-    .ser-grid {
-        background: #fff;
-        padding: 20px;
-        margin-bottom: 20px;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    }
-
-    .ser-grid h4 {
-        color: #007bff;
-        /* Bootstrap Primary Color */
-        font-size: 20px;
-        margin-top: 0;
-    }
-
-    .ser-grid p {
-        color: #777;
-    }
-
-    .download,
-    .btn-primary {
-        background: #007bff;
-        /* Bootstrap Primary Color */
-        border: none;
-        color: #fff;
-        padding: 10px 20px;
-        text-decoration: none;
-        display: inline-block;
-        font-size: 16px;
-        margin-top: 10px;
-        cursor: pointer;
-    }
-
-    .btn-primary:hover {
-        background: #0056b3;
-        /* Darker shade for Bootstrap Primary Color */
-    }
-
-    /* Footer Section Styles */
-    .footer-w3 {
-        background: #000;
-        /* Black Background */
-        padding: 30px 0;
-        color: #fff;
-    }
-
-    .footer-grids {
-        margin-top: 30px;
-    }
-
-    .footer-grid {
-        padding: 0 20px;
-    }
-
-    .footer-grid h4 {
-        color: #fff;
-        font-size: 24px;
-        margin-bottom: 20px;
-    }
-
-    .footer-grid p {
-        color: #777;
-    }
-
-    .social-icons a {
-        color: #fff;
-        font-size: 24px;
-        margin-right: 15px;
-    }
-
-    /* Credits Section Styles */
-    .copy-section {
-        background: #007bff;
-        /* Bootstrap Primary Color */
-        color: #fff;
-        padding: 15px 0;
-        position: relative;
-    }
-
-    .iconup {
-        position: absolute;
-        right: 20px;
-        bottom: 15px;
-    }
-
-    .iconup a {
-        color: #fff;
-        font-size: 18px;
-        text-decoration: none;
-    }
-
-    .copy p {
-        margin: 0;
-    }
-</style>
 
 </head>
 
 <body>
-    <!-- Header -->
-    <!-- Add your header content here -->
 
-    <!-- Banner Section -->
-    <div>
-        <div class="container">
-            <h3><a href="index.html">Home</a> / <span>Courses</span></h3>
+
+     <!-- Banner -->
+     <div class="text-center mt-4">
+        <div class="container mb-2 mt-2">
+            <h3 style="opacity:1.0;" ><a href="index.html">Home</a> / <span
+                    style="font-weight: bold;">Courses</span></h3>
         </div>
     </div>
-    <div class="clearfix"></div>
 
-    <!-- PrepRockets Contents -->
-    <div class="content">
-        <div class="courses-w3ls">
-            <div class="container">
-                <h2 class="course-grid1">Our Courses</h2>
+     
+    <!-- Class 9th -->
 
-                <!-- Course 1: Mathematics -->
-                <div class="course-grids">
-                    <div class="col-md-6 course-grid">
-                        <div class="mask">
-                            <!-- Use open source image URL for Mathematics -->
-                            <img src="https://source.unsplash.com/800x600/?mathematics" class="img-responsive zoom-img"
-                                alt="PrepRockets" />
-                        </div>
-                    </div>
-                    <div class="col-md-6 course-grid1 gri">
-                        <h4>Mathematics</h4>
-                        <p align="justify">We make the students learn to analyze the problems and the tips and tricks to
-                            solve any kind of questions within a few minutes. We focus more on speed and accuracy.
-                        </p>
-                        <ul class="grid-part">
-                            <li><i class="glyphicon glyphicon-plus-sign"> </i>Arithmetic</li>
-                            <li><i class="glyphicon glyphicon-plus-sign"> </i>Trigonometry</li>
-                            <li><i class="glyphicon glyphicon-plus-sign"> </i>Algebra</li>
-                            <li><i class="glyphicon glyphicon-plus-sign"> </i>Statistics</li>
-                            <li><i class="glyphicon glyphicon-plus-sign"> </i>Mensuration</li>
-                            <li><i class="glyphicon glyphicon-plus-sign"> </i>Coordinate Geometry</li>
-                            <li><i class="glyphicon glyphicon-plus-sign"> </i>Probability</li>
-                        </ul>
-                    </div>
-                    <div class="clearfix"></div>
-                </div>
 
-                <!-- Course 2: Physics -->
-                <div class="course-gr
+   
+    <div class="container mt-5">
 
-ids">
-                    <div class="col-md-6 course-grid1">
-                        <h4>Physics</h4>
-                        <p>We teach concepts and depth of physics. We focus more on the application of laws and
-                            principles. We follow HC Verma's Physics book as our reference materials for solving
-                            numericals.</p>
-                        <ul class="grid-part">
-                            <li><i class="glyphicon glyphicon-plus-sign"> </i>Motion and its types</li>
-                            <li><i class="glyphicon glyphicon-plus-sign"> </i>Force and Newton's laws</li>
-                            <li><i class="glyphicon glyphicon-plus-sign"> </i>Gravitation</li>
-                            <li><i class="glyphicon glyphicon-plus-sign"> </i>Work, energy and power</li>
-                            <li><i class="glyphicon glyphicon-plus-sign"> </i>Effects of Electric Current</li>
-                            <li><i class="glyphicon glyphicon-plus-sign"> </i>Nature of Sound</li>
-                            <li><i class="glyphicon glyphicon-plus-sign"> </i>Light - Reflection & Refraction</li>
-                        </ul>
-                    </div>
-                    <div class="col-md-6 course-grid gri">
-                        <div class="mask">
-                            <!-- Use open source image URL for Physics -->
-                            <img src="https://source.unsplash.com/800x600/?physics" class="img-responsive zoom-img"
-                                alt="PrepRockets course" />
-                        </div>
-                    </div>
-                    <div class="clearfix"></div>
-                </div>
+        <h3 class="text-center mb-4 text-primary">Class 9</h1>
+            <hr/>
 
-                <!-- Course 3: Chemistry -->
-                <div class="course-grids">
-                    <div class="col-md-6 course-grid">
-                        <div class="mask">
-                            <!-- Use open source image URL for Chemistry -->
-                            <img src="https://source.unsplash.com/800x600/?chemistry" class="img-responsive zoom-img" />
-                        </div>
-                    </div>
-                    <div class="col-md-6 course-grid1 gri">
-                        <h4>Chemistry</h4>
-                        <p>We never ask our students to mug up anything in chemistry. We teach them chemistry. Students
-                            need not worry about chemistry.</p>
-                        <ul class="grid-part">
-                            <li><i class="glyphicon glyphicon-plus-sign"> </i>Matter - Nature and Behaviour</li>
-                            <li><i class="glyphicon glyphicon-plus-sign"> </i>Mole Concept</li>
-                            <li><i class="glyphicon glyphicon-plus-sign"> </i>Structure of Atom</li>
-                            <li><i class="glyphicon glyphicon-plus-sign"> </i>Chemical reactions</li>
-                            <li><i class="glyphicon glyphicon-plus-sign"> </i>Acids, bases and salts</li>
-                            <li><i class="glyphicon glyphicon-plus-sign"> </i>Metals and non-metals</li>
-                            <li><i class="glyphicon glyphicon-plus-sign"> </i>Periodic Table</li>
-                            <li><i class="glyphicon glyphicon-plus-sign"> </i>Carbon and its compounds</li>
-                        </ul>
-                    </div>
-                    <div class="clearfix"></div>
-                </div>
+        <div class="row mt-5">
 
-                <!-- Course 4: Computer Education -->
-                <div class="course-grids">
-                    <div class="col-md-6 course-grid1">
-                        <h4>Computer Education</h4>
-                        <p>With computers all around us, it is inevitable that children will be exposed to them, and
-                            they
-                            will eventually be facilitated into their daily lives. The purpose of this course is to
-                            explore the basics of computer.</p>
-                        <ul class="grid-part">
-                            <li><i class="glyphicon glyphicon-plus-sign"> </i>Introduction to Windows</li>
-                            <li><i class="glyphicon glyphicon-plus-sign"> </i>Description of hardware – Monitor, CPU,
-                                Keyboard, Mouse</li>
-                            <li><i class="glyphicon glyphicon-plus-sign"> </i>Basic operations of the computer</li>
-                            <li><i class="glyphicon glyphicon-plus-sign"> </i>MS Office</li>
-                            <li><i class="glyphicon glyphicon-plus-sign"> </i>Internet - Connecting to the world</li>
-                        </ul>
-                    </div>
-                    <div class="col-md-6 course-grid gri">
-                        <div class="mask">
-                            <!-- Use open source image URL for Computer Science -->
-                            <img src="https://source.unsplash.com/800x600/?computer-science"
-                                class="img-responsive zoom-img" alt="PrepRockets course" />
-                        </div>
-                    </div>
-                    <div class="clearfix"></div>
-                </div>
+            <!-- CBSE Card -->
 
-                <!-- Course Enquiry Section -->
-                <div class="course-grids">
-                    <h2 class="tittle">Want to join us?</h2>
-                    <!-- Add content for course enrollment and registration here -->
-                    <div class="clearfix"></div>
-                    <div class="col-md-3 ser-grid">
-                        <h4>Procedure</h4>
-                        <p>Students seeking admission to any of our batches are required to undergo our admission test,
-                            which is based on the NCERT syllabus of the respective class.</p>
-                        <center><a href="https://drive.google.com/open?id=0B31Bwc7Ou3YIVDRnemgxang1Ukk" target="_blank"
-                                class="btn btn-primary download">Get Brochure</a></center>
+            <div class="col-md-3 mb-4">
+                <div class="card">
+                    <img src="https://source.unsplash.com/800x600/?mathematics" class="card-img-top" alt="Mathematics">
+                    <div class="card-body">
+                        <h5 class="card-title text-center">Class: 9 | Math | CBSE</h5>
                     </div>
-                    <div class="col-md-3 ser-grid">
-                        <h4>Registration</h4>
-                        <p>The interested students can get registered online or offline and take the admission test
-                            online. For offline exam, kindly contact our office.</p>
-                        <center><a href="./admission.html" class="btn btn-primary download">Register Now</a></center>
+                    <div class="card-footer" style="display: flex; justify-content: center;">
+                        <button class="btn btn-primary btn-sm">See Course Details</button>
                     </div>
-                    <div class="col-md-3 ser-grid">
-                        <h4>Admission test</h4>
-                        <p>The students who qualify for our admission can be enrolled in any of our courses. The minimum
-                            marks to pass the admission test is 70%. It is the mandatory criteria.</p>
-                        <center><a href="https://www.classmarker.com/online-test/start/?quiz=6ym589db54ae3a3b"
-                                title="PrepRockets Online Admission Test" target="_blank" class="btn btn-primary">Take
-                                test now</a></center>
-                    </div>
-                    <div class="col-md-3 ser-grid">
-                        <h4>Any Enquiry</h4>
-                        <p>For any admission enquiries, you can contact us at +91-7808454171. You can also mail your
-                            queries to singhtutorialLucknow@gmail.com. We love to hear from you!</p>
-                        <center><a href="./contact.html" class="btn btn-primary download">Contact Now</a></center>
-                    </div>
-                    <div class="clearfix"></div>
                 </div>
             </div>
+
+            <div class="col-md-3 mb-4">
+                <div class="card">
+                    <img src="https://source.unsplash.com/800x600/?science" class="card-img-top" alt="Science">
+                    <div class="card-body">
+                        <h5 class="card-title text-center">Class: 9 | Science | CBSE</h5>
+                    </div>
+                    <div class="card-footer" style="display: flex; justify-content: center;">
+                        <button class="btn btn-primary btn-sm">See Course Details</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ICSE  Card -->
+
+
+            <div class="col-md-3 mb-4">
+                <div class="card">
+                    <img src="https://source.unsplash.com/800x600/?mathematics" class="card-img-top" alt="Mathematics">
+                    <div class="card-body">
+                        <h5 class="card-title text-center">Class: 9 | Math | ICSE</h5>
+                    </div>
+                    <div class="card-footer" style="display: flex; justify-content: center;">
+                        <button class="btn btn-primary btn-sm">See Course Details</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3 mb-4">
+                <div class="card">
+                    <img src="https://source.unsplash.com/800x600/?science" class="card-img-top" alt="Science">
+                    <div class="card-body">
+                        <h5 class="card-title text-center">Class: 9 | Science | ICSE</h5>
+                    </div>
+                    <div class="card-footer" style="display: flex; justify-content: center;">
+                        <button class="btn btn-primary btn-sm">See Course Details</button>
+                    </div>
+                </div>
+            </div>
+
         </div>
     </div>
-    <!-- Content -->
 
-      
+
+
+    <!-- Class 10Th  -->
+
+
+    <div class="container mt-5">
+
+        <h3 class="text-center mb-4 text-primary">Class 10</h1>
+            <hr/>
+
+        <div class="row mt-5">
+
+            <!-- CBSE Card -->
+
+            <div class="col-md-3 mb-4">
+                <div class="card">
+                    <img src="https://source.unsplash.com/800x600/?mathematics" class="card-img-top" alt="Mathematics">
+                    <div class="card-body">
+                        <h5 class="card-title text-center">Class: 10 | Math | CBSE</h5>
+                    </div>
+                    <div class="card-footer" style="display: flex; justify-content: center;">
+                        <button class="btn btn-primary btn-sm">See Course Details</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3 mb-4">
+                <div class="card">
+                    <img src="https://source.unsplash.com/800x600/?science" class="card-img-top" alt="Science">
+                    <div class="card-body">
+                        <h5 class="card-title text-center">Class: 10 | Science | CBSE</h5>
+                    </div>
+                    <div class="card-footer" style="display: flex; justify-content: center;">
+                        <button class="btn btn-primary btn-sm">See Course Details</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ICSE  Card -->
+
+
+            <div class="col-md-3 mb-4">
+                <div class="card">
+                    <img src="https://source.unsplash.com/800x600/?mathematics" class="card-img-top" alt="Mathematics">
+                    <div class="card-body">
+                        <h5 class="card-title text-center">Class: 10 | Math | ICSE</h5>
+                    </div>
+                    <div class="card-footer" style="display: flex; justify-content: center;">
+                        <button class="btn btn-primary btn-sm">See Course Details</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3 mb-4">
+                <div class="card">
+                    <img src="https://source.unsplash.com/800x600/?science" class="card-img-top" alt="Science">
+                    <div class="card-body">
+                        <h5 class="card-title text-center">Class: 10 | Science | ICSE</h5>
+                    </div>
+                    <div class="card-footer" style="display: flex; justify-content: center;">
+                        <button class="btn btn-primary btn-sm">See Course Details</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <!-- Class 11th -->
+
+    <div class="container mt-5">
+
+        <h3 class="text-center mb-4 text-primary">Class 11</h1>
+            <hr/>
+
+        <div class="row mt-5">
+
+            <!-- CBSE Card -->
+
+            <div class="col-md-3 mb-4">
+                <div class="card">
+                    <img src="https://source.unsplash.com/800x600/?mathematics" class="card-img-top" alt="Mathematics">
+                    <div class="card-body">
+                        <h5 class="card-title text-center">Class: 11 | Math | CBSE</h5>
+                    </div>
+                    <div class="card-footer" style="display: flex; justify-content: center;">
+                        <button class="btn btn-primary btn-sm">See Course Details</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3 mb-4">
+                <div class="card">
+                    <img src="https://source.unsplash.com/800x600/?physics" class="card-img-top" alt="Science">
+                    <div class="card-body">
+                        <h5 class="card-title text-center">Class: 11 | Physics | CBSE</h5>
+                    </div>
+                    <div class="card-footer" style="display: flex; justify-content: center;">
+                        <button class="btn btn-primary btn-sm">See Course Details</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3 mb-4">
+                <div class="card">
+                    <img src="https://source.unsplash.com/800x600/?chemistry" class="card-img-top" alt="Science">
+                    <div class="card-body">
+                        <h5 class="card-title text-center">Class: 11 | Chemistry | CBSE</h5>
+                    </div>
+                    <div class="card-footer" style="display: flex; justify-content: center;">
+                        <button class="btn btn-primary btn-sm">See Course Details</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3 mb-4">
+                <div class="card">
+                    <img src="https://source.unsplash.com/800x600/?biology" class="card-img-top" alt="Science">
+                    <div class="card-body">
+                        <h5 class="card-title text-center">Class: 11 | Biology | CBSE</h5>
+                    </div>
+                    <div class="card-footer" style="display: flex; justify-content: center;">
+                        <button class="btn btn-primary btn-sm">See Course Details</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ICSE  Card -->
+
+
+            <div class="col-md-3 mb-4">
+                <div class="card">
+                    <img src="https://source.unsplash.com/800x600/?mathematics" class="card-img-top" alt="Mathematics">
+                    <div class="card-body">
+                        <h5 class="card-title text-center">Class: 11 | Math | ICSE</h5>
+                    </div>
+                    <div class="card-footer" style="display: flex; justify-content: center;">
+                        <button class="btn btn-primary btn-sm">See Course Details</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3 mb-4">
+                <div class="card">
+                    <img src="https://source.unsplash.com/800x600/?physics" class="card-img-top" alt="Science">
+                    <div class="card-body">
+                        <h5 class="card-title text-center">Class: 11 | Physics | ICSE</h5>
+                    </div>
+                    <div class="card-footer" style="display: flex; justify-content: center;">
+                        <button class="btn btn-primary btn-sm">See Course Details</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3 mb-4">
+                <div class="card">
+                    <img src="https://source.unsplash.com/800x600/?chemistry" class="card-img-top" alt="Science">
+                    <div class="card-body">
+                        <h5 class="card-title text-center">Class: 11 | Chemistry | ICSE</h5>
+                    </div>
+                    <div class="card-footer" style="display: flex; justify-content: center;">
+                        <button class="btn btn-primary btn-sm">See Course Details</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3 mb-4">
+                <div class="card">
+                    <img src="https://source.unsplash.com/800x600/?biology" class="card-img-top" alt="Science">
+                    <div class="card-body">
+                        <h5 class="card-title text-center">Class: 11 | Biology | ICSE</h5>
+                    </div>
+                    <div class="card-footer" style="display: flex; justify-content: center;">
+                        <button class="btn btn-primary btn-sm">See Course Details</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+
+     <!-- Class 12th -->
+
+     <div class="container mt-5">
+
+        <h3 class="text-center mb-4 text-primary">Class 12</h1>
+            <hr/>
+
+        <div class="row mt-5">
+
+            <!-- CBSE Card -->
+
+            <div class="col-md-3 mb-4">
+                <div class="card">
+                    <img src="https://source.unsplash.com/800x600/?mathematics" class="card-img-top" alt="Mathematics">
+                    <div class="card-body">
+                        <h5 class="card-title text-center">Class: 12 | Math | CBSE</h5>
+                    </div>
+                    <div class="card-footer" style="display: flex; justify-content: center;">
+                        <button class="btn btn-primary btn-sm">See Course Details</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3 mb-4">
+                <div class="card">
+                    <img src="https://source.unsplash.com/800x600/?physics" class="card-img-top" alt="Science">
+                    <div class="card-body">
+                        <h5 class="card-title text-center">Class: 12 | Physics | CBSE</h5>
+                    </div>
+                    <div class="card-footer" style="display: flex; justify-content: center;">
+                        <button class="btn btn-primary btn-sm">See Course Details</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3 mb-4">
+                <div class="card">
+                    <img src="https://source.unsplash.com/800x600/?chemistry" class="card-img-top" alt="Science">
+                    <div class="card-body">
+                        <h5 class="card-title text-center">Class: 12 | Chemistry | CBSE</h5>
+                    </div>
+                    <div class="card-footer" style="display: flex; justify-content: center;">
+                        <button class="btn btn-primary btn-sm">See Course Details</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3 mb-4">
+                <div class="card">
+                    <img src="https://source.unsplash.com/800x600/?biology" class="card-img-top" alt="Science">
+                    <div class="card-body">
+                        <h5 class="card-title text-center">Class: 12 | Biology | CBSE</h5>
+                    </div>
+                    <div class="card-footer" style="display: flex; justify-content: center;">
+                        <button class="btn btn-primary btn-sm">See Course Details</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ICSE  Card -->
+
+
+            <div class="col-md-3 mb-4">
+                <div class="card">
+                    <img src="https://source.unsplash.com/800x600/?mathematics" class="card-img-top" alt="Mathematics">
+                    <div class="card-body">
+                        <h5 class="card-title text-center">Class: 12 | Math | ICSE</h5>
+                    </div>
+                    <div class="card-footer" style="display: flex; justify-content: center;">
+                        <button class="btn btn-primary btn-sm">See Course Details</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3 mb-4">
+                <div class="card">
+                    <img src="https://source.unsplash.com/800x600/?physics" class="card-img-top" alt="Science">
+                    <div class="card-body">
+                        <h5 class="card-title text-center">Class: 12 | Physics | ICSE</h5>
+                    </div>
+                    <div class="card-footer" style="display: flex; justify-content: center;">
+                        <button class="btn btn-primary btn-sm">See Course Details</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3 mb-4">
+                <div class="card">
+                    <img src="https://source.unsplash.com/800x600/?chemistry" class="card-img-top" alt="Science">
+                    <div class="card-body">
+                        <h5 class="card-title text-center">Class: 12 | Chemistry | ICSE</h5>
+                    </div>
+                    <div class="card-footer" style="display: flex; justify-content: center;">
+                        <button class="btn btn-primary btn-sm">See Course Details</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3 mb-4">
+                <div class="card">
+                    <img src="https://source.unsplash.com/800x600/?biology" class="card-img-top" alt="Science">
+                    <div class="card-body">
+                        <h5 class="card-title text-center">Class: 12 | Biology | ICSE</h5>
+                    </div>
+                    <div class="card-footer" style="display: flex; justify-content: center;">
+                        <button class="btn btn-primary btn-sm">See Course Details</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+     <div class="container mt-5">
+
+        <div class="row mt-5">
+
+            <!-- CBSE Card -->
+
+            <div class="col-md-3 mb-4">
+                <div class="card">
+                    <img src="https://source.unsplash.com/800x600/?mathematics" class="card-img-top" alt="Mathematics">
+                    <div class="card-body">
+                        <h5 class="card-title text-center">Class: 12 | Accountancy
+            | CBSE</h5>
+                    </div>
+                    <div class="card-footer" style="display: flex; justify-content: center;">
+                        <button class="btn btn-primary btn-sm">See Course Details</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3 mb-4">
+                <div class="card">
+                    <img src="https://source.unsplash.com/800x600/?physics" class="card-img-top" alt="Science">
+                    <div class="card-body">
+                        <h5 class="card-title text-center">Class: 12 | Physics | CBSE</h5>
+                    </div>
+                    <div class="card-footer" style="display: flex; justify-content: center;">
+                        <button class="btn btn-primary btn-sm">See Course Details</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3 mb-4">
+                <div class="card">
+                    <img src="https://source.unsplash.com/800x600/?chemistry" class="card-img-top" alt="Science">
+                    <div class="card-body">
+                        <h5 class="card-title text-center">Class: 12 | Chemistry | CBSE</h5>
+                    </div>
+                    <div class="card-footer" style="display: flex; justify-content: center;">
+                        <button class="btn btn-primary btn-sm">See Course Details</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3 mb-4">
+                <div class="card">
+                    <img src="https://source.unsplash.com/800x600/?biology" class="card-img-top" alt="Science">
+                    <div class="card-body">
+                        <h5 class="card-title text-center">Class: 12 | Biology | CBSE</h5>
+                    </div>
+                    <div class="card-footer" style="display: flex; justify-content: center;">
+                        <button class="btn btn-primary btn-sm">See Course Details</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ICSE  Card -->
+
+
+            <div class="col-md-3 mb-4">
+                <div class="card">
+                    <img src="https://source.unsplash.com/800x600/?mathematics" class="card-img-top" alt="Mathematics">
+                    <div class="card-body">
+                        <h5 class="card-title text-center">Class: 12 | Math | ICSE</h5>
+                    </div>
+                    <div class="card-footer" style="display: flex; justify-content: center;">
+                        <button class="btn btn-primary btn-sm">See Course Details</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3 mb-4">
+                <div class="card">
+                    <img src="https://source.unsplash.com/800x600/?physics" class="card-img-top" alt="Science">
+                    <div class="card-body">
+                        <h5 class="card-title text-center">Class: 12 | Physics | ICSE</h5>
+                    </div>
+                    <div class="card-footer" style="display: flex; justify-content: center;">
+                        <button class="btn btn-primary btn-sm">See Course Details</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3 mb-4">
+                <div class="card">
+                    <img src="https://source.unsplash.com/800x600/?chemistry" class="card-img-top" alt="Science">
+                    <div class="card-body">
+                        <h5 class="card-title text-center">Class: 12 | Chemistry | ICSE</h5>
+                    </div>
+                    <div class="card-footer" style="display: flex; justify-content: center;">
+                        <button class="btn btn-primary btn-sm">See Course Details</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3 mb-4">
+                <div class="card">
+                    <img src="https://source.unsplash.com/800x600/?biology" class="card-img-top" alt="Science">
+                    <div class="card-body">
+                        <h5 class="card-title text-center">Class: 12 | Biology | ICSE</h5>
+                    </div>
+                    <div class="card-footer" style="display: flex; justify-content: center;">
+                        <button class="btn btn-primary btn-sm">See Course Details</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+   <!-- Footer Section -->
+
     <div class="container-fluid footer-w3">
         <div class="row">
             <div class="col-md-4 col-sm-12">
                 <h4 class="text-center">About Us</h4>
-                <p class="text-center"><span><strong>PrepRockets</strong> is the first smart class provider institute in Lucknow. Our
-                        well-qualified teachers make us different. At our institute, you can find the
-                        appropriate conglomeration of enthusiasm and experience which sets us aside from the rest
-                        of the institutes.</span></p>
+                <p><strong>PrepRockets</strong> a leading EdTech company dedicated to providing top-notch coaching to CBSE/ICSE students in classes 9th to 12th. With a mission to redefine education and make it more accessible, engaging, and effective, we have curated a platform that goes beyond traditional teaching methods.</p>
             </div>
             <div class="col-md-4 col-sm-12">
                 <h4 class="text-center">Upcoming Batches</h4>
                 <p class="text-center">New batches will be announced soon. Kindly download our brochure and keep visiting our website
                     for further details. </p><br />
-                    <div style="display: flex; justify-content: center;">
+                    <div style="display: flex;justify-content: center;">
                         <a href="https://drive.google.com/uc?export=download&id=0B31Bwc7Ou3YIVDRnemgxang1Ukk" class="btn btn-primary download"
                             style="margin-bottom: 2rem;">Download Brochure</a>
                     </div>
@@ -519,35 +685,36 @@ ids">
         </div>
     </div>
 
-<!-- Footer Section -->
 
 <!-- Credits Section -->
+
+
 <div class="copy-section">
     <div class="container">
-        <div style="display: flex; justify-content: center;">
-            <a href="#top"> <span class="material-symbols-outlined" style="font-size: 4.5rem;color: white;">
+        <div class="iconup">
+            <a href="#top"> <span class="material-symbols-outlined" style="font-size: 4.5rem;">
                 arrow_circle_up
             </span></a>
         </div>
         <div class="social-icons">
-            <a href="https://www.facebook.com/singh.tutorial" target='_blank'>
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-facebook text-white" viewBox="0 0 16 16">
-                    <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"/>
-                  </svg>
-            </a>
-            <a href="https://twitter.com/Vinit_Shahdeo" target="_blank">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-twitter-x text-white" viewBox="0 0 16 16">
-                    <path d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865l8.875 11.633Z"/>
-                  </svg>
-            </a>
-            <a href="https://plus.google.com/u/0/102103204043130681070" target="_blank"></a>
-            <a href="https://www.linkedin.com/in/singh-tutorial-Lucknow" target="_blank"></a>
+            <a href="https://www.facebook.com/singh.tutorial" target='_blank'><i class="icon1"></i></a>
+            <a href="https://twitter.com/Vinit_Shahdeo" target="_blank"><i class="icon2"></i></a>
+            <a href="https://plus.google.com/u/0/102103204043130681070" target="_blank"><i class="icon3"></i></a>
+            <a href="https://www.linkedin.com/in/singh-tutorial-Lucknow" target="_blank"><i class="icon4"></i></a>
         </div>
-        <div style="margin-top: 0px;">
-            <p>&copy; ALFFASENTAULI LLP 2021-2024 | Designed & Maintained by <a href="https://portfolio-harisaini778.vercel.app/Home" style="color: #fff;"><strong>Hari Saini &  Aditya Rawat</strong> </a></p>
+        <div class="copy">
+            <p>&copy; ALFFASENTAULI LLP 2021-2024 | Designed & Maintained by <a href="https://portfolio-harisaini778.vercel.app/Home" style="color: #fff;"><strong>Hari Saini</strong></a></p>
         </div>
     </div>
 </div>
+
+
+
+  
+
+
+
+
 <!-- Credits Section -->
     
     <!-- Social icons and credits to Vinit Shahdeo -->
