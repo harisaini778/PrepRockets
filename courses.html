@@ -166,11 +166,47 @@
             color: #fff;
             margin: 0 10px;
         }
+
+          /* Style for the WhatsApp button */
+    .whatsapp-button {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+       /* WhatsApp green color */
+      color: #fff;
+      text-align: center;
+      cursor: pointer;
+      z-index: 1000; /* Ensure it's above other elements */
+    }
 </style>
 
 </head>
 
 <body>
+
+     <!-- whats app button -->
+
+
+     <div id="whatsapp-container"></div>
+
+     <script>
+         // Function to include external HTML file
+         function includeHTML() {
+             var xhttp = new XMLHttpRequest();
+             xhttp.onreadystatechange = function() {
+                 if (this.readyState == 4 && this.status == 200) {
+                     document.getElementById("whatsapp-container").innerHTML = this.responseText;
+                 }
+             };
+             xhttp.open("GET", "whatsapp.html", true);
+             xhttp.send();
+         }
+ 
+         // Call the function to include whatsapp.html content
+         includeHTML();
+     </script>
+ 
+
 
 
      <!-- Banner -->
@@ -677,7 +713,8 @@
             </div>
             <div class="col-md-4 col-sm-12">
                 <h4 class="text-center">Contact Us</h4>
-                    <p class="text-center">Tedhi Bazar Khalwa South Balrampur,Uttar Pradesh, 271201</p>
+                <p class="text-center">Balrampur Branch - Tedhi Bazar Khalwa South Balrampur,Uttar Pradesh, 271201</p>
+                <p class="text-center">Lucknow Branch - 1st floor, Star Heights, Uttardhona, Near City Law College, Lucknow, 226028</p>
                     <p class="text-center"><strong>+91-9219253496</strong></p>
                     <p class="text-center"><strong>preprockets@gmail.com</strong></p>
                 
