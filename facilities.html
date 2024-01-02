@@ -55,6 +55,11 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <!--css-->
 
+    <!-- whats app button -->
+
+       <link href="/whatsapp.html"/>
+
+
     <!--google fonts-->
     <link href="https://fonts.googleapis.com/css?family=Montserrat|Raleway" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Montserrat|Raleway" rel="stylesheet">
@@ -141,10 +146,46 @@
             margin: 0 10px;
         }
 
+           
+    /* Style for the WhatsApp button */
+    .whatsapp-button {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+       /* WhatsApp green color */
+      color: #fff;
+      text-align: center;
+      cursor: pointer;
+      z-index: 1000; /* Ensure it's above other elements */
+    }
+
     </style>
 </head>
 
 <body>
+
+   <!-- whats app button -->
+
+
+   <div id="whatsapp-container"></div>
+
+   <script>
+       // Function to include external HTML file
+       function includeHTML() {
+           var xhttp = new XMLHttpRequest();
+           xhttp.onreadystatechange = function() {
+               if (this.readyState == 4 && this.status == 200) {
+                   document.getElementById("whatsapp-container").innerHTML = this.responseText;
+               }
+           };
+           xhttp.open("GET", "whatsapp.html", true);
+           xhttp.send();
+       }
+
+       // Call the function to include whatsapp.html content
+       includeHTML();
+   </script>
+
     <!--header-->
     <!--header-->
     <div class="banner-w3agile m-3">
