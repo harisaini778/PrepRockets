@@ -22,6 +22,9 @@
     <!-- Your additional meta tags go here -->
 
     <!-- CSS Stylesheets -->
+
+    <link href="/whatsapp.html"/>
+    <link rel="stylesheet" href="/whatsapp.css"/>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
     <link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
     <link rel="stylesheet" href="style.css">
@@ -102,6 +105,21 @@
         }
 
         
+      
+    /* Style for the WhatsApp button */
+    .whatsapp-button {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+       /* WhatsApp green color */
+      color: #fff;
+      text-align: center;
+      cursor: pointer;
+      z-index: 1000; /* Ensure it's above other elements */
+    }
+  
+
+        
     </style>
     <!-- Your additional stylesheets go here -->
 
@@ -115,6 +133,31 @@
 </head>
 
 <body>
+
+
+     <!-- whats app button -->
+
+
+     <div id="whatsapp-container"></div>
+
+     <script>
+         // Function to include external HTML file
+         function includeHTML() {
+             var xhttp = new XMLHttpRequest();
+             xhttp.onreadystatechange = function() {
+                 if (this.readyState == 4 && this.status == 200) {
+                     document.getElementById("whatsapp-container").innerHTML = this.responseText;
+                 }
+             };
+             xhttp.open("GET", "whatsapp.html", true);
+             xhttp.send();
+         }
+ 
+         // Call the function to include whatsapp.html content
+         includeHTML();
+     </script>
+ 
+
 
 
 
