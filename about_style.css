@@ -1,0 +1,77 @@
+ /* Add your custom styles for responsiveness */
+        
+       /* Footer Styles */
+          /* Footer Styles */
+          .footer-w3 {
+            background-color: black;
+            color: #fff;
+            padding: 2.5rem !important;
+        }
+
+        /* .footer-grids {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .footer-grid {
+            width: 30%;
+            padding: 0 15px;
+        }
+
+        .footer-grid h4 {
+            color: #fff;
+            font-size: 20px;
+            margin-bottom: 20px;
+        }
+
+        .footer-grid p {
+            text-align: justify;
+            font-size: 14px;
+            line-height: 1.6;
+        } */
+
+        .footer-grid a.btn {
+            background-color: #007bff;
+            color: #fff;
+            text-decoration: none;
+            padding: 10px 20px;
+            display: inline-block;
+            margin-top: 10px;
+        }
+
+        /* Credits Section Styles */
+        .copy-section {
+            background-color: #007bff;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        .iconup a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .social-icons {
+            margin-top: 10px;
+        }
+
+        .social-icons a {
+            color: #fff;
+            margin: 0 10px;
+        }
+
+        
+      
+    /* Style for the WhatsApp button */
+    .whatsapp-button {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+       /* WhatsApp green color */
+      color: #fff;
+      text-align: center;
+      cursor: pointer;
+      z-index: 1000; /* Ensure it's above other elements */
+    }
+  
